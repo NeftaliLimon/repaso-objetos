@@ -31,6 +31,9 @@ public class PoligonoRegular implements Figura {
     }
 
     public PoligonoRegular(int numeroDeLados){
+        if(numeroDeLados<5){
+            throw new NumeroInvalidoDeLados("Número de lados válido a partir de 5");
+        }
         this.numeroDeLados=numeroDeLados;
     }
 
